@@ -333,6 +333,19 @@
             .footer-content {
                 flex-direction: column;
             }
+            
+            .plato {
+                padding: 15px;
+            }
+            
+            .nombre-plato {
+                font-size: 1.2rem;
+            }
+            
+            .ver-mas-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
         }
         
         .notification {
@@ -350,6 +363,24 @@
             animation: fadeIn 0.5s ease;
             text-align: center;
             max-width: 90%;
+        }
+        
+        /* Estilos para mejorar la experiencia táctil */
+        .ver-mas-btn {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        
+        /* Mejora para dispositivos táctiles */
+        @media (hover: none) {
+            .plato:hover {
+                transform: none;
+            }
+            
+            .ver-mas-btn:hover {
+                transform: none;
+                background: linear-gradient(to right, #3498db, #2980b9);
+            }
         }
     </style>
 </head>
@@ -369,135 +400,6 @@
             </div>
         </div>
 
-        <div class="categoria">
-            <h2><i class="fas fa-utensils"></i> Entradas</h2>
-            <div class="menu">
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Ensalada</span>
-                        <span class="precio">25lps</span>
-                        <p class="plato-descripcion">Fresca ensalada con ingredientes seleccionados.</p>
-                        <img src="img/ensalada.jpg" alt="Ensalada" class="plato-imagen">
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Encurtido</span>
-                        <span class="precio">15lps</span>
-                        <p class="plato-descripcion">Encurtido casero con un toque especial.</p>
-                        <img src="img/encurtido.jpg" alt="Encurtido" class="plato-imagen">
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Papas personal</span>
-                        <span class="precio">35lps</span>
-                        <p class="plato-descripcion">Crujientes papas fritas porción personal.</p>
-                        <img src="img/papas_personal.jpg" alt="Papas personal" class="plato-imagen">
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Salsa Extra</span>
-                        <span class="precio">15lps</span>
-                        <p class="plato-descripcion">Salsa adicional para acompañar tus platillos.</p>
-                        <img src="img/salsa_extra.jpg" alt="Salsa Extra" class="plato-imagen">
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="categoria">
-            <h2><i class="fas fa-drumstick-bite"></i> Platos Principales</h2>
-            <div class="menu">
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Finger 10 unidades</span>
-                        <span class="precio">160lps</span>
-                        <p class="plato-descripcion">Deliciosos dedos de pollo crujientes.</p>
-                    </div>
-                    <div class="plato-info">
-                        Deliciosos dedos de pollo crujientes. 
-                        <span class="salsa-info">También disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante) por 15lps extra.</span>
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Finger 6 unidades</span>
-                        <span class="precio">120lps</span>
-                        <p class="plato-descripcion">Deliciosos dedos de pollo crujientes.</p>
-                    </div>
-                    <div class="plato-info">
-                        Deliciosos dedos de pollo crujientes. 
-                        <span class="salsa-info">También disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante) por 15lps extra.</span>
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Alitas 6 unidades</span>
-                        <span class="precio">140lps</span>
-                        <p class="plato-descripcion">Alitas de pollo crujientes por fuera y jugosas por dentro.</p>
-                    </div>
-                    <div class="plato-info">
-                        Alitas de pollo crujientes por fuera y jugosas por dentro.
-                        <span class="salsa-info">Disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante).</span>
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Alitas 12 unidades</span>
-                        <span class="precio">240lps</span>
-                        <p class="plato-descripcion">Alitas de pollo crujientes por fuera y jugosas por dentro.</p>
-                    </div>
-                    <div class="plato-info">
-                        Alitas de pollo crujientes por fuera y jugosas por dentro.
-                        <span class="salsa-info">Disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante).</span>
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-                
-                <div class="plato">
-                    <div class="plato-header">
-                        <span class="nombre-plato">Pollo a la plancha</span>
-                        <span class="precio">115lps</span>
-                        <p class="plato-descripcion">Pollo a la plancha jugoso y sabroso.</p>
-                        <img src="imagenes/plancha.jpeg" alt="Pollo a la plancha" class="plato-imagen">
-                    </div>
-                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
-                        <i class="fas fa-info-circle"></i> Ver más
-                    </button>
-                </div>
-            </div>
-        </div>
         <div class="categoria">
             <h2><i class="fas fa-hamburger"></i> Hamburguesas y Tortas</h2>
             <div class="menu">
@@ -695,7 +597,7 @@
                     <div class="plato-header">
                         <span class="nombre-plato">Combo 3</span>
                         <span class="precio">95lps</span>
-                        <p class="plato-descripcion">Combo con 2 piezas de pollo, papas y tortillas.</p>
+                        <p class="plato-descripcion">Combo con 2 piezas de pollo, papas и tortillas.</p>
                     </div>
                     <div class="combo-info">Incluye: 2 piezas de pollo, papas y tortillas.</div>
                     <img src="img/combo_3.jpg" alt="Combo 3" class="plato-imagen">
@@ -977,6 +879,74 @@
     </div>
 
     <div class="notification" id="notification"></div>
-    <script src="js/script.js"></script>
+
+    <script>
+        // Función unificada para mostrar/ocultar información del plato
+        function togglePlatoInfo(button) {
+            // Mostrar notificación de funcionamiento
+            showNotification('Funcionando en ' + (isTouchDevice() ? 'móvil' : 'computadora'));
+            
+            const platoDiv = button.parentNode;
+            const isExpanding = !platoDiv.classList.contains("expanded");
+            
+            // Cerrar todos los platos expandidos excepto el actual
+            if (isExpanding) {
+                document.querySelectorAll('.plato.expanded').forEach(plato => {
+                    if (plato !== platoDiv) {
+                        plato.classList.remove("expanded");
+                        const btn = plato.querySelector('.ver-mas-btn');
+                        if (btn) {
+                            btn.innerHTML = '<i class="fas fa-info-circle"></i> Ver más';
+                        }
+                    }
+                });
+            }
+            
+            // Alternar estado del plato actual
+            platoDiv.classList.toggle("expanded");
+            
+            // Cambiar texto del botón
+            if (platoDiv.classList.contains("expanded")) {
+                button.innerHTML = '<i class="fas fa-chevron-up"></i> Ver menos';
+            } else {
+                button.innerHTML = '<i class="fas fa-info-circle"></i> Ver más';
+            }
+        }
+        
+        // Detectar si es un dispositivo táctil
+        function isTouchDevice() {
+            return (('ontouchstart' in window) ||
+               (navigator.maxTouchPoints > 0) ||
+               (navigator.msMaxTouchPoints > 0));
+        }
+        
+        // Mostrar notificación
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+            
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 2000);
+        }
+        
+        // Agregar event listeners para dispositivos táctiles
+        document.querySelectorAll('.ver-mas-btn').forEach(button => {
+            // Para dispositivos táctiles
+            button.addEventListener('touchstart', function(event) {
+                // Para evitar que el evento click también se dispare
+                event.preventDefault();
+                togglePlatoInfo(this);
+            }, { passive: false });
+            
+            // Para evitar que se disparen dos eventos en algunos navegadores móviles
+            button.addEventListener('click', function(e) {
+                if (isTouchDevice()) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
