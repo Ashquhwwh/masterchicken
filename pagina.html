@@ -1091,8 +1091,60 @@
                 }
             });
         });
+              // Protección contra atajos de teclado
+        document.addEventListener('keydown', function(e) {
+            // Deshabilitar F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                alert('⚠️ Esta acción está restringida');
+                return false;
+            }
+            
+            // Deshabilitar Ctrl+U (ver código fuente)
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                alert('⚠️ Esta acción está restringida');
+                return false;
+            }
+            
+            // Deshabilitar Ctrl+Shift+I (herramientas de desarrollo)
+            if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+                alert('⚠️ Esta acción está restringida');
+                return false;
+            }
+            
+            // Deshabilitar Ctrl+Shift+C (inspeccionar elemento)
+            if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+                e.preventDefault();
+                alert('⚠️ Esta acción está restringida');
+                return false;
+            }
+        });
+        
+        // Protección contra la selección de texto
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Protección contra la arrastrar y soltar
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Mensaje de advertencia al intentar salir
+        window.addEventListener('beforeunload', function(e) {
+            // Esta función muestra un mensaje de confirmación al salir
+        });
+        
+        // Ofuscación adicional (solo para mostrar, no es real)
+        console.log('%c🔒 Código protegido - Master Chicken', 'color: #ff8c00; font-size: 16px; font-weight: bold;');
+        console.log('%c⚠️ Modificar este código está restringido', 'color: #e74c3c; font-size: 14px;');
     </script>
 </body>
 </html>
+
 
 
