@@ -385,7 +385,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <header>
             <h1>🍗 Master Chicken 🍗</h1>
             <p class="subtitle">El mejor pollo de Honduras - Desde 2015 sirviendo calidad y sabor</p>
@@ -399,6 +399,151 @@
                 <button class="test-btn warning" onclick="showNotification('¡Modo móvil detectado!')">Estoy en Móvil</button>
             </div>
         </div>
+
+        <div class="categoria">
+            <h2><i class="fas fa-utensils"></i> Entradas</h2>
+            <div class="menu">
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Ensalada</span>
+                        <span class="precio">25lps</span>
+                        <p class="plato-descripcion">Fresca ensalada con ingredientes seleccionados.</p>
+                        <img src="img/ensalada.jpg" alt="Ensalada" class="plato-imagen">
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Encurtido</span>
+                        <span class="precio">15lps</span>
+                        <p class="plato-descripcion">Encurtido casero con un toque especial.</p>
+                        <img src="img/encurtido.jpg" alt="Encurtido" class="plato-imagen">
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Papas personal</span>
+                        <span class="precio">35lps</span>
+                        <p class="plato-descripcion">Crujientes papas fritas porción personal.</p>
+                        <img src="img/papas_personal.jpg" alt="Papas personal" class="plato-imagen">
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Salsa Extra</span>
+                        <span class="precio">15lps</span>
+                        <p class="plato-descripcion">Salsa adicional para acompañar tus platillos.</p>
+                        <img src="img/salsa_extra.jpg" alt="Salsa Extra" class="plato-imagen">
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2><i class="fas fa-drumstick-bite"></i> Platos Principales</h2>
+            <div class="menu">
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Finger 10 unidades</span>
+                        <span class="precio">160lps</span>
+                        <p class="plato-descripcion">Deliciosos dedos de pollo crujientes.</p>
+                    </div>
+                    <div class="plato-info">
+                        Deliciosos dedos de pollo crujientes. 
+                        <span class="salsa-info">También disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante) por 15lps extra.</span>
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Finger 6 unidades</span>
+                        <span class="precio">120lps</span>
+                        <p class="plato-descripcion">Deliciosos dedos de pollo crujientes.</p>
+                    </div>
+                    <div class="plato-info">
+                        Deliciosos dedos de pollo crujientes. 
+                        <span class="salsa-info">También disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante) por 15lps extra.</span>
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Alitas 6 unidades</span>
+                        <span class="precio">140lps</span>
+                        <p class="plato-descripcion">Alitas de pollo crujientes por fuera y jugosas por dentro.</p>
+                    </div>
+                    <div class="plato-info">
+                        Alitas de pollo crujientes por fuera y jugosas por dentro.
+                        <span class="salsa-info">Disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante).</span>
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Alitas 12 unidades</span>
+                        <span class="precio">240lps</span>
+                        <p class="plato-descripcion">Alitas de pollo crujientes por fuera y jugosas por dentro.</p>
+                    </div>
+                    <div class="plato-info">
+                        Alitas de pollo crujientes por fuera y jugosas por dentro.
+                        <span class="salsa-info">Disponibles en tu salsa favorita: barbacoa (no picante) o buffalo (picante).</span>
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+                
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Pollo a la plancha</span>
+                        <span class="precio">115lps</span>
+                        <p class="plato-descripcion">Pollo a la plancha jugoso y sabroso.</p>
+                        <img src="imagenes/plancha.jpeg" alt="Pollo a la plancha" class="plato-imagen">
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2><i class="fas fa-hamburger"></i> Hamburguesas y Tortas</h2>
+            <div class="menu">
+                <div class="plato">
+                    <div class="plato-header">
+                        <span class="nombre-plato">Hamburguesa con papas</span>
+                        <span class="precio">110lps</span>
+                        <p class="plato-descripcion">Deliciosa hamburguesa acompañada de papas fritas crujientes.</p>
+                        <img src="imagenes/hamburguesa.jpg" alt="Hamburguesa con papas" class="plato-imagen">
+                    </div>
+                    <button class="ver-mas-btn" onclick="togglePlatoInfo(this)">
+                        <i class="fas fa-info-circle"></i> Ver más
+                    </button>
+                </div>
 
         <div class="categoria">
             <h2><i class="fas fa-hamburger"></i> Hamburguesas y Tortas</h2>
@@ -950,3 +1095,4 @@
     </script>
 </body>
 </html>
+
